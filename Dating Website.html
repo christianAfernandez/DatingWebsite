@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<header>
+    <meta charset="UTF-8">
+    <title>Dating Website </title>
+    <style>
+        fieldset{
+            background-color: #fcffb6;
+        }
+        fieldset{
+            border:10px solid yellow;
+
+        }
+        label{
+            display:inline-block; width:180px; text-align: right;
+        }
+
+    </style>
+    <header><center> <h1> Please Enter Your Details For Our Dating Website</h1></center> </header>
+
+    <body>
+    <form>
+        <fieldset>
+            <legend> Your Face</legend>
+
+            <input type="File"
+                   id="File"
+                   value="Choose Photo">
+            <div><label>ImagePreview:</label></div>
+        </fieldset>
+        <!--  <label for="Gender">Gender:</label>
+              <input type="text"
+                     id="Gender"
+                     name="Gender">
+              <form method="post"> -->
+
+
+        <br /><fieldset>
+        <legend>Your General Details</legend>
+
+        <div>
+            <label>Name:</label>
+            <input type="text"
+                   required>
+        </div>
+        <label>Gender:</label>
+        <!-- <input type="checkbox"
+                id="gender"
+                name="Gender" required> -->
+
+        <input type="checkbox" name="Gender" value="Male" />Male
+        <input type="checkbox" name="Gender" value="Famale" />Female
+
+        <br />  <label>Age</label>
+        <input type="text"
+               id="age"
+               name="age" required>
+
+        <br /> <label>Date Of Birth</label>
+        <input type="text"
+               id="Dateofbirth"
+               name="dateofbirth"
+               value="mm/dd/yyyy"required>
+
+        <br /><label>Favorite Color</label>
+        <input type="color" name="favcolor" value="#ff0000">
+
+        <br /> <label >Which Country</label><select name="country">
+        <option value="">Country...</option>
+        <option value="America USA">America USA</option>
+        <option value="UK">UK</option>
+        <option value="China">China</option>
+        <option value="Canada">Canada</option>
+        <option value="South America">South America/Brazil</option></select>
+    </fieldset>
+
+        <br /> <fieldset>
+        <legend>Your Indicators</legend>
+        <label>Height:</label>
+        <span style="background: #ff1122">Short</span>
+        <input type="range" min="0" max="100">
+        <span style="background: #ff0cda">Tall</span>
+
+        <br /> <label>Salary:</label>
+        <span style="background: #ff0802">Poor</span>
+        <input type="range" min="0" max="100">
+        <span style="background: #ff1fc2">Rich</span>
+    </fieldset>
+        <br /> <fieldset>
+        <legend>Your Contact Information</legend>
+        <br /> <label>Email Address</label>
+        <input align="center"
+               type="text"
+               id="EmailAddress"
+               name="EmailAddress" required>
+        <table><br /> <label>Date Of Birth</label>
+            <input type="text"
+                   id="Moble"
+                   name="Moble" required>
+
+            <br /> <label>Address</label>
+            <textarea rows="4" cols="50"></textarea>
+            <br /> <label>Method to Contact You</label>
+            <input type="checkbox" name="Contact" value="Email" />Email
+            <input type="checkbox" name="Contact" value="Whatsapp" />Whatsapp
+            <input type="checkbox" name="Contact" value="InAppChat" />In-App Chat
+        </table>
+    </fieldset>
+
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    </body>
+</header>
+</html>
